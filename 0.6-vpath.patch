@@ -1,0 +1,11 @@
+--- origsrc/tomboy-latex-0.6/src/Makefile.am	2010-02-20 15:06:03.000000000 -0600
++++ src/tomboy-latex-0.6/src/Makefile.am	2011-03-02 01:29:22.557848500 -0600
+@@ -4,7 +4,7 @@ CSC = gmcs -debug
+ TARGET_NAME = Latex
+ TARGET = $(TARGET_NAME).dll
+ 
+-CSFLAGS = -target:library -resource:Latex.addin.xml
++CSFLAGS = -target:library -resource:$(srcdir)/Latex.addin.xml
+ 
+ CSFILES = $(srcdir)/Latex.cs \
+ 	  $(srcdir)/LatexPreferences.cs \

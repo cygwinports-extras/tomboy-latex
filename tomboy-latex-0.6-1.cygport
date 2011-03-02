@@ -1,0 +1,8 @@
+inherit mono
+
+DESCRIPTION="Tomboy LaTeX plugin"
+HOMEPAGE="http://www.reitwiessner.de/programs/tomboy-latex.html"
+SRC_URI="http://www.reitwiessner.de/programs/tomboy-latex/v${PV}/${P}.tar.gz"
+PATCH_URI="0.6-vpath.patch"
+
+DISTCLEANFILES="config.status Makefile src/Makefile"
